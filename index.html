@@ -34,7 +34,16 @@
   <body>
     <div class="card">
       <h1>AI Chat Bot</h1>
-      <p>Your Node.js HTML server is working.</p>
+      <p>Simple chat window — type a message and receive an echo reply.</p>
+
+      <ul id="messages" style="list-style:none;padding:0;margin:1rem 0;max-height:300px;overflow:auto;width:400px;">
+      </ul>
+
+      <form id="chat-form" style="display:flex;gap:8px;justify-content:center;">
+        <input id="chat-input" type="text" placeholder="Say something..." style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(148,163,184,0.2);background:rgba(255,255,255,0.02);color:#e2e8f0;" />
+        <button type="submit" style="padding:8px 12px;border-radius:8px;border:none;background:#2563eb;color:white;">Send</button>
+      </form>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

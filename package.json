@@ -4,6 +4,7 @@
   "description": "Simple Node.js server serving an HTML page",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "server": "node server.js",
+    "start": "npm run server"
   }
 }
